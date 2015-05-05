@@ -1,0 +1,24 @@
+<input type="number" id="num">Enter the number between 1 and 10</input><p>
+<button type="button" id="butt" name="submit" onclick="func()">submit</button><p>
+<p id='texttt'>test</p>
+
+<script type="text/javascript">
+
+function func()
+{
+	var x,text;
+     x=document.getElementById("num").value;
+   if (x<1 || x>10) 
+   {
+   	text="not correct";
+   }
+   else
+   {  
+   	 text='done';
+
+   }
+   document.getElementById('texttt').innerHTML=text;
+}
+
+
+</script>
